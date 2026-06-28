@@ -1,0 +1,11 @@
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Sensitive data / output files containing keys and phrases
+*.txt
+!requirements.txt
+!check.txt

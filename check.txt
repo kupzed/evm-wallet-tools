@@ -1,0 +1,9 @@
+# File contoh untuk pengecekan saldo wallet (check.py)
+# Masukkan 1 Private Key atau Seed Phrase per baris.
+# Baris yang diawali dengan tanda '#' akan diabaikan oleh skrip.
+
+# Contoh format Private Key:
+0xb3fda81ad334709a37d56c075041c08cc6d308ee44effe834c8861b631a16b40
+
+# Contoh format Seed Phrase (12 kata):
+trophy hobby combine weather spin system state wedding cable can submit ribbon
