@@ -1,6 +1,6 @@
 # 🧰 EVM Wallet Tools (`evm-wallet-tools`)
 
-Perangkat Python serbaguna untuk membuat (*generate*) wallet Ethereum secara massal serta memeriksa saldo ETH Mainnet secara otomatis, atau memeriksa saldo dari daftar **Private Key** / **Seed Phrase** milik Anda sendiri secara aman dan lokal.
+Perangkat Python serbaguna untuk membuat (_generate_) wallet Ethereum secara massal serta memeriksa saldo ETH Mainnet secara otomatis, atau memeriksa saldo dari daftar **Private Key** / **Seed Phrase** milik Anda sendiri secara aman dan lokal.
 
 ---
 
@@ -46,8 +46,9 @@ evm-wallet-tools/
 Pastikan komputer Anda sudah terpasang **Python 3.8+** dan `pip`.
 
 1. **Clone repository ini:**
+
    ```bash
-   git clone <URL_REPOSITORY_ANDA>
+   git clone https://github.com/kupzed/discord-auto-messeger
    cd evm-wallet-tools
    ```
 
@@ -69,15 +70,16 @@ python3 run.py
 ```
 
 Anda akan disajikan menu interaktif:
+
 ```text
 ==========================================
-           EVM WALLET TOOLS               
+           EVM WALLET TOOLS
 ==========================================
 1. Generate Wallet (Buat Wallet Baru)
 2. Check Wallet    (Cek Saldo Wallet)
 3. Exit            (Keluar)
 ==========================================
-Pilih menu (1/2/3): 
+Pilih menu (1/2/3):
 ```
 
 ---
@@ -85,6 +87,7 @@ Pilih menu (1/2/3):
 ### 2. Penjelasan Mode Operasi
 
 #### 🔹 Pilihan 1: Generate Wallet (`generate.py`)
+
 - Masukkan jumlah wallet yang ingin dibuat (misal: `10`).
 - Pilih panjang kata Mnemonic:
   - **1** untuk 12 Kata (128-bit)
@@ -92,6 +95,7 @@ Pilih menu (1/2/3):
 - Hasil wallet akan disimpan secara otomatis ke file `phrase.txt`, `privatekey.txt`, dan `address.txt`. Wallet yang memiliki saldo ETH > 0 akan disimpan ke `balance.txt`.
 
 #### 🔹 Pilihan 2: Check Wallet (`check.py`)
+
 - Buka file `check.txt` dan masukkan daftar Private Key atau Seed Phrase Anda (1 baris per wallet).
 - Jalankan menu pilihan 2. Skrip akan membaca `check.txt` secara default (atau Anda bisa menentukan nama file lain).
 - Wallet yang memiliki saldo ETH > 0 akan otomatis disimpan di `result_my_balances.txt`.
@@ -100,7 +104,7 @@ Pilih menu (1/2/3):
 
 ## ⚙️ Kustomisasi RPC Provider
 
-Secara default, skrip menggunakan RPC publik Ethereum Mainnet. Jika Anda memiliki RPC Node pribadi (misalnya dari Infura, Alchemy, atau QuickNode) untuk koneksi lebih cepat dan stabil, atur melalui *environment variable*:
+Secara default, skrip menggunakan RPC publik Ethereum Mainnet. Jika Anda memiliki RPC Node pribadi (misalnya dari Infura, Alchemy, atau QuickNode) untuk koneksi lebih cepat dan stabil, atur melalui _environment variable_:
 
 ```bash
 export RPC_URL="https://mainnet.infura.io/v3/YOUR_API_KEY"
@@ -109,7 +113,6 @@ python3 run.py
 
 ---
 
-## 🔒 Catatan Keamanan (Security Disclaimer)
+## Lisensi
 
-- **Proteksi Git:** Jangan pernah menghapus `*.txt` dari file `.gitignore`. Kunci privat Anda tidak akan pernah ter-push ke GitHub selama file `.gitignore` tetap aktif.
-- **Penyimpanan Kunci:** Simpan Private Key dan Seed Phrase Anda di tempat yang aman dan privat.
+[MIT License](./LICENSE) — Copyright © 2026 Kupzed
